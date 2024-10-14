@@ -1,0 +1,11 @@
+{
+  "name": "documentation-comment-id-viewer",
+  "version": "0.0.1",
+  "displayName": "Documentation Comment ID Viewer",
+  "unity": "2023.1",
+  "description": "Documentation Comment ID Viewer",
+  "dependencies": {
+    "com.cysharp.zstring": "2.5.1",
+    "org.nuget.microsoft.codeanalysis.csharp": "4.11.0"
+  }
+}
