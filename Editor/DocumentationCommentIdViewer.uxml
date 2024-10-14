@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/documentation-comment-id-viewer/Editor/DocumentationCommentIdViewer.uss?fileID=7433441132597879392&amp;guid=bed8c1d8ef78347f1ab1a12529c679a2&amp;type=3#DocumentationCommentIdViewer" />
+    <uie:Toolbar>
+        <uie:ToolbarButton text="Reload&#10;" name="reload-button" />
+        <uie:ToolbarSpacer style="flex-grow: 1;" />
+        <uie:ToolbarButton text="Setting&#10;" name="setting-button" />
+    </uie:Toolbar>
+    <uie:Toolbar>
+        <uie:ToolbarSearchField name="tree-search-field" view-data-key="tree-search-field" style="flex-grow: 1; max-width: 60%;" />
+        <uie:ToolbarSpacer style="flex-grow: 1;" />
+        <uie:EnumFlagsField type="Dcid.AssemblyTreeViewItemMemberType, DocumentationCommentIdViewer" value="-1" name="member-type-flags" view-data-key="member-type-flags" />
+        <uie:EnumFlagsField value="User" type="Dcid.AssemblyTreeViewItemDefineType, DocumentationCommentIdViewer" name="member-define-type-flags" view-data-key="member-define-type-flags" />
+    </uie:Toolbar>
+    <Dcid.SplitView orientation="Vertical" fixed-pane-initial-dimension="150" fixed-pane-index="1">
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:TreeView name="assembly-tree-view" horizontal-scrolling="true" selection-type="Multiple" view-data-key="assembly-tree-view" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:TextField multiline="true" name="id-text-area" vertical-scroller-visibility="AlwaysVisible" is-delayed="true" readonly="true" view-data-key="id-text-area" style="white-space: normal; max-height: 100%; flex-grow: 1;" />
+        </ui:VisualElement>
+    </Dcid.SplitView>
+    <uie:Toolbar style="justify-content: flex-end;">
+        <ui:ProgressBar value="22" title="0/0" name="progress-bar" style="width: 150px;" />
+    </uie:Toolbar>
+</ui:UXML>
