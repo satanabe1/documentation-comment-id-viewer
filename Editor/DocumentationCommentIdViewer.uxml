@@ -9,7 +9,7 @@
         <uie:ToolbarSearchField name="tree-search-field" view-data-key="tree-search-field" style="flex-grow: 1; max-width: 60%;" />
         <uie:ToolbarSpacer style="flex-grow: 1;" />
         <uie:EnumFlagsField type="Dcid.AssemblyTreeViewItemMemberType, DocumentationCommentIdViewer" value="-1" name="member-type-flags" />
-        <uie:EnumFlagsField value="User" type="Dcid.AssemblyTreeViewItemDefineType, DocumentationCommentIdViewer" name="member-define-type-flags" />
+        <uie:EnumFlagsField value="-1" type="Dcid.AssemblyTreeViewItemDefineType, DocumentationCommentIdViewer" name="member-define-type-flags" />
     </uie:Toolbar>
     <Dcid.SplitView orientation="Vertical" fixed-pane-initial-dimension="150" fixed-pane-index="1">
         <ui:VisualElement style="flex-grow: 1;">
